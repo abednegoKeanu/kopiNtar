@@ -1,0 +1,331 @@
+.silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+*,
+body,
+html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-primary: rgb(37, 34, 34);
+    --bg-secondary: rgb(223, 217, 206);
+    --text-primary:white;
+    --text-sec: rgb(243, 89, 89);
+}
+
+.container{
+    background-color: var(--bg-primary);
+    height: 100vh;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(223, 217, 206, 0.9);
+    height: 5rem;
+    text-align: center;
+    position: fixed;
+    align-content: center;
+    padding: 10px 2%;
+    font-family: "Silkscreen", sans-serif;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.header .header-left{
+    display: flex;
+    font-size: 30px;
+    align-content: center;
+    text-align: center;
+    background-color: var(--bg-primary);
+    border-radius: 20px;
+    padding: 0 12px;
+    box-shadow: 4px 4px 2px red;
+}
+.header .header-left a{
+    color: var(--text-primary);
+    text-decoration: none;
+}
+.header .header-left span{
+    font-size: 50px;
+    color: rgb(243, 89, 89);
+}
+
+.header .header-mid{
+    display: inline-block;
+    font-size: 20px;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--bg-primary);
+    border-radius: 20px;
+    padding: 0 20px; 
+    box-shadow: 4px 4px 2px red;
+}
+
+.header .header-mid a{
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 10px;
+}
+.header .header-mid a:hover{
+    content: "";
+    display: inline-block;
+    color: var(--text-sec);
+    position: relative;
+}
+.header .header-right{
+    background-color: var(--bg-primary);
+    border-radius: 20px;
+    font-size: 30px;
+    align-content: center;
+    text-align: center;
+    padding: 10px 20px;
+    box-shadow: 4px 4px 2px red; 
+}
+
+.header .header-right a{
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+.header .header-right a .menu {
+    display: none;
+}
+
+.header .header-right a:hover{
+    content: "";
+    display: inline-block;
+    color: var(--text-sec);
+}
+
+.body{
+    background-color: var(--bg-primary);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('yanapi-senaud-6HR8vpjYUHo-unsplash\ \(1\).jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.body::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 20%;
+    background: linear-gradient(0deg, rgba(1, 1, 3, 1)40%, rgba(255, 255, 255, 0)70%) ;
+}
+
+.body .desc{
+    color: var(--text-primary);
+    font-family: "Silkscreen", san-serif;
+    padding: 3%;
+}
+.body .desc h2{
+    color: var(--text-primary);
+    font-size: 2rem;
+    font-family: "Silkscreen", san-serif;
+}
+
+.body .desc span{
+    color: var(--text-sec);
+    font-size: 6rem;
+}
+
+.body .desc p{
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.body .desc button{
+    font-family: "Silkscreen", san-serif;
+    padding: 15px 25px;
+    font-size: 2rem;
+    border-radius: 15px ;
+    border: none;
+    cursor: pointer;
+    color: var(--text-primary);
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.body .desc button:hover{
+    content: "";
+    color: var(--text-sec);
+    display: inline-block;
+}
+
+.Products{
+    background-color: black;
+    margin: 0;
+    padding: 3%;
+    color: var(--text-primary);
+    font-family: "Silkscreen", sans-serif;
+}
+
+.Products h3{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 4rem;
+}
+
+.Products .title{
+    text-align: center;
+    font-size: 10px;
+    color: var(--text-sec);
+}
+
+.Products .menu{
+    display: flex;
+    flex-wrap:wrap;
+    margin-top: 2rem;
+    justify-content: center;
+    padding: 10px;
+}
+
+.Products .menu .Each{
+    margin: 0 10px;
+    margin-top: 20px;
+    padding: 10px 10px;
+    background-color: var(--bg-secondary);
+    border-radius: 20px;
+}
+.Products .menu img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.Products .Menu a{
+    text-decoration: none;
+    color: var(--bg-primary);
+    font-size: 2rem;
+}
+
+.Products .Menu span{
+    color: red;
+    font-size: 1rem;
+}
+
+.Location{
+    top: 0;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.Location #desc{
+    text-align: center;
+}
+
+.Location iframe{
+    text-align: center;
+    width: 800px;
+    height: 400px;
+    margin-top: 2rem;
+}
+
+.About .data{
+    margin: 4rem;
+    text-align: center;
+    align-content: center;
+    width: 300px;
+    margin-left: 39%;
+    padding: 10px;
+    color: black;
+}
+
+.About #abt{
+    margin-top: 4rem;
+}
+
+.About .desc2{
+    text-align: center;
+}
+
+.About .data .user{
+    background-color: var(--text-sec);
+    color: var(--bg-primary);
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
+.About .data .email{
+    background-color: var(--text-sec);
+    color: var(--bg-primary);
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
+.About .data input{
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+}
+
+.About .data button{
+    font-size: 1rem;
+    padding: 10px 40px;
+    cursor: pointer;
+    background-color: var(--bg-secondary);
+    border: none;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: var(--bg-secondary);
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: var(--bg-primary);
+}
+
+.footer .logo{
+    font-size: 24px;
+    margin-bottom: 7px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.footer .back a{
+    text-decoration: none;
+    color: var(--bg-primary);
+    margin: 10px;
+}
+
+
+@media (max-width: 1020px){
+    .container h1, a{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 420px){
+    .container
+}
